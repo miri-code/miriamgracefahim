@@ -50,7 +50,7 @@ header {
     max-width: 1200px; /* Adjust for overall container size */
     margin: 0 auto; /* Center the header container */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('images/stars gif.webp') no-repeat center center / cover; /* Add transparency */
+        url('images/new-header.gif') no-repeat center center / cover; /* Add transparency */
     color: white; /* Ensure text contrasts with the background */
     border-radius: 10px; /* Optional: adds rounded corners */
 }
@@ -80,7 +80,7 @@ header {
     justify-content: center; /* Center the icons horizontally */
     align-items: center; /* Center the icons vertically */
     margin-top: 10px; /* Add spacing between the title and the icons */
-    gap: 15px; /* Add space between each icon */
+    gap: 30px; /* Add space between each icon */
 }
 
 #social-icons img {
@@ -89,6 +89,7 @@ header {
     display: block;
     cursor: pointer; /* Add a pointer cursor on hover */
     transition: transform 0.2s ease-in-out; /* Smooth scaling effect on hover */
+    padding-left: 10px;;
 }
 
 #social-icons img:hover {
@@ -136,11 +137,12 @@ header {
     top: 0;
     width: 100%;
     height: auto;
-    background-color: rgba(44, 44, 44, 0.8); /* Semi-transparent dark background */
+    background-color: rgba(150, 227, 159, 0.8); /* Semi-transparent dark background */
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     z-index: 1000;
+    font-family: "MuseoModerno", sans-serif;
 }
 
 #navbar ul {
@@ -236,16 +238,39 @@ header {
     gap: 20px;
     padding: 20px;
     position: relative;
+    font-family: "MuseoModerno", sans-serif;
+    text-align: left;
 }
 /* Left Content */
-#left-content {
-    max-width: 30%;
+#left-content h1 {
     text-align: left;
+    font-size: 64pt;
+}
+#left-content > p {
+    font-family: "Murecho", sans-serif;
+    font-size: 24pt;
+}
+#contact-box h3 {
+    font-family: "Murecho", sans-serif;
+}
+#contact-box {
+    align-content: left;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    align-items: left;
+    position: relative;
 }
 /* Right Content */
 #right-content {
     max-width: 30%;
-   align-content: right;
+   align-content: center;
+   padding-top: 20 px;
+}
+header img {
+    display: block;       /* removes inline spacing */
+    height: 80px;         /* set size as you like */
+    object-fit: contain;
 }
 /* About Me Section */
 
@@ -635,101 +660,6 @@ body {
 .education-item .degree a:hover {
     text-decoration: underline; /* Adds underline on hover */
     color: #cbaf25; /* Slightly darker blue on hover */
-}
-
-
-/* Experience Section Styling */
-#experience-container {
-    background-color: black; /* Matches the page background */
-    padding: 50px 20px;
-    border-radius: 10px;
-    color: white;
-}
-
-#experience .section-header h2 {
-    font-size: 2.5em;
-    color: #9d00ff;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.job {
-    margin-bottom: 50px;
-}
-
-.job h3 {
-    font-size: 2em;
-    color: #9d00ff; /* Purple color for job titles */
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.job .date {
-    font-size: 1.2em;
-    color: #d8b8ff; /* Light purple for dates */
-    font-style: italic;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.job p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #ffffffcc; /* Slightly transparent white */
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.job a {
-    color: #007bff; /* Blue color for links */
-    text-decoration: none;
-}
-
-.job a:hover {
-    text-decoration: underline;
-}
-
-/* Specific Styling for Chime Media Container */
-#chime-media-container {
-    display: flex; /* Enables side-by-side layout */
-    gap: 40px; /* Adds space between the images */
-    justify-content: center; /* Centers the images horizontally */
-    align-items: flex-start; /* Aligns images to the top */
-    margin-top: 20px; /* Adds space above the container */
-}
-
-/* Styling for Images and Captions Inside Chime Media Container */
-#chime-media-container .image-with-caption {
-    text-align: center; /* Centers captions under the images */
-    width: 300px; /* Ensures all images are the same size */
-}
-
-#chime-media-container .image-with-caption img {
-    width: 100%; /* Ensures the image fills its container */
-    height: auto; /* Maintains the aspect ratio of the image */
-    border-radius: 10px; /* Adds rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Adds depth with a shadow */
-}
-
-/* Caption Styling */
-#chime-media-container .image-with-caption .caption {
-    font-size: 1em;
-    color: #ffffffcc; /* Slightly transparent white text */
-    margin-top: 10px; /* Adds space between the image and caption */
-}
-
-/* Styling for the Job Section Images */
-.job .image-container {
-    text-align: center; /* Center the image within the container */
-    margin-top: 20px; /* Adds space above the image */
-}
-
-.job .image-container img {
-    width: 100%; /* Makes the image responsive */
-    max-width: 500px; /* Limits the maximum width */
-    height: auto; /* Maintains the aspect ratio */
-    border-radius: 10px; /* Adds rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Adds depth with a shadow */
 }
 
 /* Section Visibility Fix */
